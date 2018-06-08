@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-Us" class="bo-mobile js_active vc_desktop vc_transform fa_events-icons-ready">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<title>Кулинарные рецепты</title>
+	<link rel="stylesheet" href="style.css">
+	<meta property="description" content="Кулинарные рецепты">
+	<meta property="url" content="http://kulinarnirecept.am">
+	<meta property="title" content="Кулинарные рецепты">
+	<meta property="description" content="Кулинарные рецепты">
+	<meta property="image" content="http://kulinarnirecept.am/wp-content/themes/recept/images/кулинария-990x525.jpg">
+</head>
+<body>
+	<header>
+	<div class="container">
+	<div id="brending">	
+	<ul> 
+  <li><a href="index.html" class="current"><cite>Кулинария</cite></a></li>
+</ul>	
+	</div>
+	<nav>
+		<ul>
+			<li class="current"><a href="about.html"><cite>Видео</cite></a></li>
+			<li><a href="services.html"><cite>Обеды</cite></a></li>
+		</ul>
+	</nav>
+</div>
+	</header>
+
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="b796c281.jpg" style="width:100%">
+  <div class="text">Сегодня</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="KEV_3485_800x520.jpg" style="width:100%">
+  <div class="text">Завтра</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="b028e1a0.jpg" style="width:100%">
+  <div class="text">Послезавтра</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+	<iframe width="827" height="400" src="https://www.youtube.com/embed/O7sIKoG5u0Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <iframe width="830" height="400" src="https://www.youtube.com/embed/ilhSyN7uLzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <iframe width="827" height="400" src="https://www.youtube.com/embed/0DIjszOwddQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <iframe width="830" height="400" src="https://www.youtube.com/embed/qSQdpnlpU7w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <iframe width="827" height="400" src="https://www.youtube.com/embed/W_ecFzhxdHo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> <iframe width="830" height="400" src="https://www.youtube.com/embed/tLdRI04pvtw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><iframe width="827" height="400" src="https://www.youtube.com/embed/A0-RfyTvQT4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><iframe width="830" height="400" src="https://www.youtube.com/embed/iFUm0S7mD2c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</body>
+</html>
